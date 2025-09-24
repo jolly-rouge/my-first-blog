@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My first blog</title>
+    <style>
+        header{
+            background: url("the_background.png");
+            text-align: center;
+            background-size: cover;
+            font-size: 17px;
+            font-family: Helvetica, sans-serif;
+        }
+        img {
+            margin: 40px 0px 0px 0px;
+            border: 7px solid white;
+            border-radius: 15px;
+        }
+        a {
+            color:#5A3E2B;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 60px;
+            color: green;
+        }
+        ul {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        li {
+            display: inline;
+            padding: 00px 10px 0px 10px;
+            cursor: pointer;
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        button{
+            border: none;
+            background: lightskyblue;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+            margin: 0px 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: whitesmoke;
+            color: lightskyblue;
+            border: 2px solid lightskyblue;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+            }
+            li {
+                display: block;
+                padding: 5px;
+                text-align: left;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="/girl.png" alt="Bridge between mountain and Eath" width="200" height="200">
+    <h1>Ruriko's Blog</h1>
+    <ul>
+        <li> <a href="#">About me</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Contact me</a></li>
+    </ul>
+</header>
+
+<article>
+    <h3>Description (日本語):</h3>
+    <p>こんにちは！EN/JP VTuberです🌸 <br>
+        日本と世界をつなぎたいです！よろしくお願いします！</p>
+
+        <p>✨ このチャンネルでは：<br>
+        - 🎤 日本語のおしゃべり ＋ 英語学習 <br>
+        - 💻 プログラミング ＋ Figmaデザイン <br>
+        - 🏎️ レース＆ゲーム <br>
+        <hr></p>
+
+    <h3>Description (English):</h3>
+    <p>Hi! I’m a bilingual VTuber (EN/JP) 🌸<br>
+        I want to connect Japan and the world by building a fun, welcoming community!</p>
+
+    <p>✨ On this channel, you’ll find: <br>
+        - 🎤 English & Japanese chatting + learning<br>
+        - 💻 Relaxing programming & Figma design<br>
+        - 🏎️ Racing & gaming fun!<br>
+    </p>
+</article>
+<button>Follow Ruriko</button>
+
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+<script>
+    $("button").on("click", function() {
+        alert("You followed Ruriko! Thanks!")
+    })
+</script>
+</body>
+</html>
